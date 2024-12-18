@@ -1,53 +1,53 @@
-
-  *{
-    margin: 0;
+*{
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
-body{
-    font-size: 18px;
-    max-width: 1440px;
-    margin:auto;
-    font-family: 'Bai Jamjuree', sans-serif;
-    color: #9FABB2;
-}
-h1,h2,h3,h4,h5,h6{
-    color:#000000;
-}
-header{
+main{
+    width: 100%;
     background-image: url(images/bg-header-desktop.png), linear-gradient(0deg, rgba(255,255,255,0.5324511201839882) 21%, rgba(159,171,178,0.8125814133435973) 100%);
     background-size: cover;
     background-position: center center;
+}
+.showcase , .install{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
     text-align: center;
-    padding: 6em 0;
+    margin-bottom: 50px;
 }
-.container{
-    max-width: 80%;
-    margin: auto;
+.showcase .container{
+    width: 100%;
+    height: 40%;
 }
-.small-container{
-    text-align: center;
-    max-width: 700px;
-    margin: auto;
+.showcase img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
-main .showcase{
-    text-align: center;
-    margin-top: -40px;
-    padding-bottom: 4em;
-}
-.para h2{
-    font-size: 2.7rem;
+.showcase h2{
+    font-size: 40px;
     font-weight: 600;
 }
-.para p{
-    font-size: 1.4rem;
-    margin: 1em auto 2em;
-    line-height: 1.4em;
+.showcase p{
+    font-size: 20px;
+}
+.download{
+    width: 50%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .download_btn{
-    display: inline-block;
+    width: 45%;
+    height: 100%;
     color: #fff;
-    padding: 20px 60px;
+    padding: 15px 50px;
     text-decoration: none;
     border-radius: 50px;
 }
@@ -60,131 +60,195 @@ main .showcase{
     box-shadow: 0px 3px hsla(233, 66%, 60%, 0.462);
 }
 .keep-track{
-    padding: 3em 0;
-}
-.keep-track>h3{
-    font-size: 2.2rem;
-}
-.keep-track>p{
-    margin: 1.2em auto 5em;
-    line-height: 1.6em;
-}
-.lower{
-    display: flex;
-}
-.lower-left img{
     width: 100%;
-}
-/* .lower-right{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-.feature-container{
-    margin-left: 17%;
-    height: 90%;
-    width: 54%;
+    height: 90Vh;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin: 50px 0;
+}
+.keep-track h3{
+    font-size: 30px;
+}
+.keep-track p{
+    margin: 10px 0;
+}
+.keep-track .lower{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+.keep-track .lower .lower-left,.keep-track .lower .lower-right{
+    width: 45%;
+}
+.keep-track .lower .lower-left img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.lower .lower-right {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.lower .lower-right .feature{
+    width: 100%;
+    height: 25%;
+    text-align: start;
 }
 .feature h5{
-    font-size: 1.5rem;
+    font-size: 24px;
 }
 .feature p{
-    line-height: 1.8em;
-    margin-top: .5em;
+    margin-top: 10px;
 }
 .accessibility{
-    text-align: center;
-    padding: 3em 0;
+width: 100%;
+height: 90vh;
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: space-around;
+text-align: center;
+margin: 50px 0;
+}
+.accessibility .small-container{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .accessibility h3{
-    font-size: 2.2rem;
+    font-size: 30px;
 }
-.accessibility p{
-    margin: 1.2em auto 5em;
-    line-height: 1.6em;
+.accessibility img{
+    width: 100%;
+    height: 75%;
+    object-fit: contain;
 }
-
 .tools{
-    text-align: center;
-    padding: 1em 0 3em;
+width: 100%;
+height: 40vh;
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: space-around;
+text-align: center;
+margin: 50px 0;
 }
 .tools h3{
-    font-size: 2.2rem;
-}
-.tools>p{
-    margin: 1.2em auto 3.8em;
+    font-size: 30px;
 }
 .tools .container{
+    width: 100%;
+    height: 75%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
-.tool{
-    flex: 0 0 32%;
-}
-.tool h5{
-    font-size: 1.5rem;
-    margin: 1.5em 0 .5em;
-}
- .tool p{
-    line-height: 1.7em;
-}
-
-.brands{
-    width: 80%;
-    margin: auto;
+.tools .container .tool{
+    width: 30%;
+    height: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 5em 0;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.brands .brand img{
-    width: 90%;
-    margin: auto;
+.tool img {
+    width: 100%;
+    height: 40%;
+    object-fit: contain;
+}
+.tool h5 {
+    width: 100%;
+    height: 10%;
+}
+.tool p {
+    width: 100%;
+    height: 30%;
+}
+.brands{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 50px 0;
+}
+.brand{
+    width: 18%;
+    height: 100%;
+}
+.brand img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
-.install .small-container{
-    padding: 3em 0 9em;
-    max-width : 750px;
+.install{
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    margin: 50px 0;
 }
-.para h3{
-    font-size: 2.4rem;
-    font-weight: 600;
+.install .download{
+    height: 30%;
 }
-.para p{
-    margin: 1em auto 2em;
-    line-height: 1.4em;
-    font-size: 1.2rem;
+.install h3{
+    font-size: 30px;
 }
+
 footer{
+    width: 100%;
+    height: 15vh;
     background-color: #F5F6F8;
-    padding: 2.7em 0;
 }
 footer .container{
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
 }
 .footer-logo{
-    flex: 0 0 18%;
+    width: 20%;
+    height: 100%;
 }
 .social-icons{
-    flex : 0 0 14%;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 .footer-logo img{
-    width: 60px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 .footer-menu{
-    flex:1;
+    width: 50%;
+    height: 100%;
     display: flex;
 }
 .f-menu{
-    width: 25%;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    
 }
 .f-menu a{
     display: block;
-    line-height: 2em;
     text-decoration: none;
     color: #000;
 }
@@ -195,18 +259,3 @@ footer .container{
     width:33.33%;
     text-align: right;
 }
-.social-icons i:hover{
-    color: hsl(171, 66%, 44%);
-}
-.f-menu a:hover{
-    color:hsl(171, 66%, 44%);
-}
-.attribution{
-    width: 80%;
-    text-align: center;
-    margin: auto;
-    display: block;
-    font-size: 12px;
-}
-
-
